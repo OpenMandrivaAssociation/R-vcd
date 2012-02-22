@@ -10,13 +10,13 @@ Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.2-12.tar.gz
-Requires:         R-MASS R-grid R-colorspace R-stats R-utils R-MASS
+Requires:         R-MASS R-grid R-colorspace R-stats R-utils
 Requires:         R-grDevices R-KernSmooth R-mvtnorm R-kernlab
 %if %{without bootstrap}
 Requires:         R-HSAUR 
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS
-BuildRequires:    R-grid R-colorspace R-stats R-utils
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-MASS R-grid R-colorspace R-stats R-utils
 BuildRequires:    R-grDevices R-KernSmooth R-mvtnorm R-kernlab
 %if %{without bootstrap}
 BuildRequires:    R-HSAUR 
