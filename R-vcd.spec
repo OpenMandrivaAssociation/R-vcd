@@ -1,28 +1,25 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  vcd
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          1.2_12
-Release:          1
+Release:          2
 Summary:          Visualizing Categorical Data
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.2-12.tar.gz
-Requires:         R-MASS R-grid R-colorspace 
-Requires:         R-stats R-utils R-MASS R-grDevices 
-%if %{with bootstrap}
-Requires:         R-KernSmooth R-mvtnorm R-kernlab
-%else
-Requires:         R-KernSmooth R-mvtnorm R-kernlab R-HSAUR 
+Requires:         R-MASS R-grid R-colorspace R-stats R-utils R-MASS
+Requires:         R-grDevices R-KernSmooth R-mvtnorm R-kernlab
+%if %{without bootstrap}
+Requires:         R-HSAUR 
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS R-grid R-colorspace
-BuildRequires:    R-stats R-utils R-MASS R-grDevices 
-%if %{with bootstrap}
-BuildRequires:    R-KernSmooth R-mvtnorm R-kernlab
-%else
-BuildRequires:    R-KernSmooth R-mvtnorm R-kernlab R-HSAUR 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS
+BuildRequires:    R-grid R-colorspace R-stats R-utils
+BuildRequires:    R-grDevices R-KernSmooth R-mvtnorm R-kernlab
+%if %{without bootstrap}
+BuildRequires:    R-HSAUR 
 %endif
 
 %description
