@@ -1,15 +1,17 @@
-%bcond_with bootstrap
+%bcond_without bootstrap
 %global packname  vcd
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
-Version:          1.2_12
-Release:          2
+Version:          1.2.13
+Release:          1
 Summary:          Visualizing Categorical Data
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.2-12.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/vcd_1.2-13.tar.gz
 Requires:         R-MASS R-grid R-colorspace R-stats R-utils
 Requires:         R-grDevices R-KernSmooth R-mvtnorm R-kernlab
 %if %{without bootstrap}

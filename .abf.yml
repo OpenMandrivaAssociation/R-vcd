@@ -1,2 +1,4 @@
+removed_sources:
+  vcd_1.2-12.tar.gz: 74749cf539dcd3689ffb728b1dd88b216be4f4cf
 sources:
-  "vcd_1.2-12.tar.gz:"	74749cf539dcd3689ffb728b1dd88b216be4f4cf
+  vcd_1.2-13.tar.gz: d21435ebab552b78f77511c62406c6fb00114ca1
