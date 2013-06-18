@@ -6,7 +6,7 @@
 
 Name:             R-%{packname}
 Version:          1.2.13
-Release:          1
+Release:          2
 Summary:          Visualizing Categorical Data
 Group:            Sciences/Mathematics
 License:          GPL-2
