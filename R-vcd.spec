@@ -10,7 +10,7 @@ Release:          2
 Summary:          Visualizing Categorical Data
 Group:            Sciences/Mathematics
 License:          GPL-2
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/vcd_1.2-13.tar.gz
 Requires:         R-MASS R-grid R-colorspace R-stats R-utils
 Requires:         R-grDevices R-KernSmooth R-mvtnorm R-kernlab
